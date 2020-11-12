@@ -1,0 +1,20 @@
+{
+  "name": "ol-foley",
+  "version": "0.0.0",
+  "description": "OpenLayers - Chaikins line smoothing algorithm",
+  "author": "Horst Dehmer <horst.dehmer@syncpoint.io> (http://syncpoint.io/)",
+  "dependencies": {
+    "ol": "6.4.3",
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "mocha": "^8.2.0",
+    "parcel": "^1.12.4"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build --experimental-scope-hoisting --public-url . index.html",
+    "test": "mocha --require esm"
+  }
+}
